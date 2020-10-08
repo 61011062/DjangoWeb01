@@ -1,0 +1,27 @@
+{% extends 'frontend/base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<div class="jumbotron" align="middle">
+    <script language="JavaScript">
+        function CalculateAge()
+        {
+            var byear = 2000;
+            var cdate  = new Date();
+            var cyear = cdate.getFullYear();
+            document.write(cyear-byear);
+        }
+    </script>
+    <h1 class="display-3">About me</h1>
+    <hr class="my-2">
+    <p class="lead">My name : Sagan Kaewsing</p>
+    <p>Nickname : Kongbeng</p>
+    <p>Birth date : 26 June 2000</p>
+    <p>Age : <script>CalculateAge()</script></p>
+    <p>Github : <a href="https://github.com/61011062">61011062</a></p>
+    <p>Country : Thailand</p>
+    <p>College : King Mongkut's Institute of Technology Ladkrabang (KMITL)</p>
+    <p></p>
+    
+</div>
+{% endblock %}
